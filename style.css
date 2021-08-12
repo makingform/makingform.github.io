@@ -1,60 +1,98 @@
-* {
-    margin: 0;
-    padding: 0;
-	box-sizing: border-box;
-}
-
-
-html,
 body {
-    background: #cccccc;
-    padding: 20px;
+    background: rgba(163, 195, 235, 1);
+    background-image: url("https://zigberg.com/assets/uploads/revslider/default/slider-pattern.png");
+    margin-bottom: 30px;
+}
+.container {
+    position: relative;
+}
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 48px;
+  color: rgba(242, 123, 1, 1);
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+h2 {
+  font-family: 'Nunito', sans-serif;
+  color: rgba(64, 7, 197, 1);
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+/*img {
+    /* You can change the size of your images. */
+    /* position: absolute; */
+    /*width: 190px;
+    display: inline;
+    border-style: dotted solid;
+    border-color: rgba(236, 134, 82, 1);
+    border-width: thick;
+    padding: 10px;
+    margin: 7px;
+}*/
+div.polaroid {
+  max-width: 10%;
+  background-color: white;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 60px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  margin-left: 45px;
+  padding: 40px;
+  float: left;
+  text-align: center;
+}
+div.polaroid:hover {
+  transform: scale(3);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+    display: block;
 }
 
-.header {
-    /* position: fixed; */
-}
-
-.shape-poster {
-  width: 556px;
-	height: 800px;
-	margin: 0 auto;
-	background: yellow;
-	position: relative;
+div.polaroid:hover:after {
+  margin-left: 10%;
+  position: absolute;
 }
 
 
-.festival-poster{
-  width: 556px;
-	height: 800px;
-	margin: 0 auto;
-	position: relative;
+button {
+  background-color: rgba(192, 163, 235, .7);
+  padding: 2%;
+  margin: 20px;
+  border-style: double;
+  border-radius: 200px 200px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
-
-img {
-  width: 556px;
-	margin: 0 auto;
-	background: white;
-  margin-top: 30px;
+div.container {
+  text-align: center;
 }
-
-/* IMPORTANT: all poster elements must include the "position: absolute;" */
-
-#circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: red;
-    border-radius: 50%;
+div.one {
+  margin: -20px 0px 0px -20px;
+}
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  position: center;
+}
+img.pusheen {
+  width: 200px;
+  margin: 20px;
+  margin-top: 5px;
+  margin-left: 1034px;
+  position: static;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 20%;
   }
-
-
-
-    /* left: 50px;
-    top: 100px; */
-
-    /* optional: try CSS Gradients: https://www.css-gradient.com/ */
-
-    /* optional: try CSS dropshadows: https://getcssscan.com/css-box-shadow-examples */
-
+  to {
+    margin-left: 0%;
+    width: 20%;
+  }
 }
